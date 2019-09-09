@@ -1,0 +1,7 @@
+#Folders
+bin/
+inter/
+
+#Files
+*.vcxproj
+*filters
