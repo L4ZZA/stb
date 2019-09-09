@@ -4191,7 +4191,7 @@ static const stbi_uc stbi__zdefault_distance[32] =
    5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
 };
 /*
-Init algorithm:
+init algorithm:
 {
    int i;   // use <= to match clearly with spec
    for (i=0; i <= 143; ++i)     stbi__zdefault_length[i]   = 8;
@@ -5833,7 +5833,7 @@ static void *stbi__psd_load(stbi__context *s, int *x, int *y, int *comp, int req
    if (!stbi__mad3sizes_valid(4, w, h, 0))
       return stbi__errpuc("too large", "Corrupt PSD");
 
-   // Create the destination image.
+   // create the destination image.
 
    if (!compression && bitdepth == 16 && bpc == 16) {
       out = (stbi_uc *) stbi__malloc_mad3(8, w, h, 0);
